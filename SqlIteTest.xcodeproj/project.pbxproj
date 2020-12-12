@@ -15,6 +15,14 @@
 		F1278B072583640500D6E80C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1278B052583640500D6E80C /* LaunchScreen.storyboard */; };
 		F1278B122583640500D6E80C /* SqlIteTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1278B112583640500D6E80C /* SqlIteTestTests.swift */; };
 		F1278B1D2583640500D6E80C /* SqlIteTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1278B1C2583640500D6E80C /* SqlIteTestUITests.swift */; };
+		F1278B2C2583690B00D6E80C /* SqlIteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1278B2B2583690B00D6E80C /* SqlIteDB.swift */; };
+		F1278B2F25836B1E00D6E80C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1278B2E25836B1E00D6E80C /* Person.swift */; };
+		F1278B3125837B8A00D6E80C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1278B3025837B8A00D6E80C /* User.swift */; };
+		F1278B332583B90700D6E80C /* UserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1278B322583B90700D6E80C /* UserVC.swift */; };
+		F1A52C0D258514C6002E95A5 /* MyNavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A52C0C258514C6002E95A5 /* MyNavVC.swift */; };
+		F1A52C0F25852268002E95A5 /* RemoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A52C0E25852268002E95A5 /* RemoteVC.swift */; };
+		F1A52C1125852806002E95A5 /* ItemsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A52C1025852806002E95A5 /* ItemsVC.swift */; };
+		F1A52C1425855062002E95A5 /* ZoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A52C1325855062002E95A5 /* ZoneCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		F1278B182583640500D6E80C /* SqlIteTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SqlIteTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1278B1C2583640500D6E80C /* SqlIteTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqlIteTestUITests.swift; sourceTree = "<group>"; };
 		F1278B1E2583640500D6E80C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1278B2B2583690B00D6E80C /* SqlIteDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqlIteDB.swift; sourceTree = "<group>"; };
+		F1278B2E25836B1E00D6E80C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		F1278B3025837B8A00D6E80C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F1278B322583B90700D6E80C /* UserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVC.swift; sourceTree = "<group>"; };
+		F1A52C0C258514C6002E95A5 /* MyNavVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavVC.swift; sourceTree = "<group>"; };
+		F1A52C0E25852268002E95A5 /* RemoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteVC.swift; sourceTree = "<group>"; };
+		F1A52C1025852806002E95A5 /* ItemsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsVC.swift; sourceTree = "<group>"; };
+		F1A52C1325855062002E95A5 /* ZoneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +115,8 @@
 		F1278AF92583640400D6E80C /* SqlIteTest */ = {
 			isa = PBXGroup;
 			children = (
+				F1A52C0B258514AF002E95A5 /* ui */,
+				F1278B2A258368F400D6E80C /* db */,
 				F1278AFA2583640400D6E80C /* AppDelegate.swift */,
 				F1278AFC2583640400D6E80C /* SceneDelegate.swift */,
 				F1278AFE2583640400D6E80C /* ViewController.swift */,
@@ -126,6 +144,44 @@
 				F1278B1E2583640500D6E80C /* Info.plist */,
 			);
 			path = SqlIteTestUITests;
+			sourceTree = "<group>";
+		};
+		F1278B2A258368F400D6E80C /* db */ = {
+			isa = PBXGroup;
+			children = (
+				F1278B2D25836AF700D6E80C /* entity */,
+				F1278B2B2583690B00D6E80C /* SqlIteDB.swift */,
+			);
+			path = db;
+			sourceTree = "<group>";
+		};
+		F1278B2D25836AF700D6E80C /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				F1278B2E25836B1E00D6E80C /* Person.swift */,
+				F1278B3025837B8A00D6E80C /* User.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		F1A52C0B258514AF002E95A5 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				F1278B322583B90700D6E80C /* UserVC.swift */,
+				F1A52C1225855054002E95A5 /* cell */,
+				F1A52C0C258514C6002E95A5 /* MyNavVC.swift */,
+				F1A52C0E25852268002E95A5 /* RemoteVC.swift */,
+				F1A52C1025852806002E95A5 /* ItemsVC.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		F1A52C1225855054002E95A5 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				F1A52C1325855062002E95A5 /* ZoneCell.swift */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +252,7 @@
 				TargetAttributes = {
 					F1278AF62583640400D6E80C = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 					F1278B0C2583640500D6E80C = {
 						CreatedOnToolsVersion = 11.4;
@@ -259,8 +316,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1278B332583B90700D6E80C /* UserVC.swift in Sources */,
+				F1278B2F25836B1E00D6E80C /* Person.swift in Sources */,
 				F1278AFF2583640400D6E80C /* ViewController.swift in Sources */,
+				F1A52C1125852806002E95A5 /* ItemsVC.swift in Sources */,
+				F1278B3125837B8A00D6E80C /* User.swift in Sources */,
+				F1A52C0D258514C6002E95A5 /* MyNavVC.swift in Sources */,
+				F1A52C0F25852268002E95A5 /* RemoteVC.swift in Sources */,
+				F1278B2C2583690B00D6E80C /* SqlIteDB.swift in Sources */,
 				F1278AFB2583640400D6E80C /* AppDelegate.swift in Sources */,
+				F1A52C1425855062002E95A5 /* ZoneCell.swift in Sources */,
 				F1278AFD2583640400D6E80C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,7 +507,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = test.com.SqlIteTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -459,7 +524,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = test.com.SqlIteTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
